@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start":"harp server src",
-    "dist":"harp compile src dist",
+    "dist":"harp compile src dist && tar -cvf dist.tar dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "i5ting",
   "license": "ISC"
 }

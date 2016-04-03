@@ -206,7 +206,7 @@ header {
     @media (max-width: 650px) {
 
         height: 50px;
-        line-height: 50px;
+        line-height: 40px;
         padding: 0;
 
         nav {
@@ -293,6 +293,68 @@ header {
         width: 100%;
     }
    
+}
+
+.intro {
+
+    li {
+        position: relative;
+        top: 0;
+        overflow: hidden;    
+        float: left;
+        width: 31.3%;
+        margin: 10px 2% 0 0;
+        padding-bottom: 0%;
+        // background: #EFEEEF;    
+        .img-circle {
+            border-radius: 50%;
+        }
+        img {
+            vertical-align: middle;
+        }
+
+        img {
+            border: 0;
+        }
+        
+        h2, .h2 {
+            font-size: 30px;
+        }
+        h1, h2, h3 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 0 0 10px;
+            display: block;
+            font-size: 100%;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+        }
+
+        @media (min-width: 650px) and (max-width:1200px) {
+            width: 32%;
+            padding-bottom: 3%;
+
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }  
+
+        @media (max-width: 650px) {
+            width: 99%;
+            padding-bottom: 4%;
+
+            &:nth-child(2n) {
+                margin-right: 0;
+            }            
+        }         
+
+    }
+
 }
 
 .partners {
