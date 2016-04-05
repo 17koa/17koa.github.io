@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start":"harp server src",
-    "dist":"harp compile src dist && tar -cvf dist.tar dist",
+    "dist":"harp compile src dist && tar -cvf dist.tar dist && scp -r dist sang@106.187.49.166:~",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "i5ting",
