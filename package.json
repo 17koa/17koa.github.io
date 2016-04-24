@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start":"harp server src",
-    "dist":"harp compile src dist && tar -cvf dist.tar dist && scp -r dist sang@106.187.49.166:~",
+    "dist":"harp compile src dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "i5ting",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-gh-pages": "^0.4.0"
+  }
 }
